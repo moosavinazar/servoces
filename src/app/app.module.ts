@@ -20,8 +20,9 @@ import {LoggingService} from "./logging.service";
     AppRoutingModule
   ],
   providers: [
-    { provide: LoggingService, useClass: LoggingService }
-  ], 
+    LoggingService,
+    { provide: 'API_URL', useValue: 'mydomain.com/api/v2' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

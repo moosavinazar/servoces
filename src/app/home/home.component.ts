@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {LoggingService} from "../logging.service";
 
 @Component({
@@ -8,7 +8,7 @@ import {LoggingService} from "../logging.service";
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private loggingService: LoggingService) { }
+  constructor(private loggingService: LoggingService, @Inject("API_URL") url: string) { }
 
   ngOnInit(): void {
   }
