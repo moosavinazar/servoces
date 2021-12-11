@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import { AppRoutingModule } from './app-routing.module';
-import {LoggingService} from "./logging.service";
 
 @NgModule({
   declarations: [
@@ -19,7 +18,7 @@ import {LoggingService} from "./logging.service";
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [LoggingService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
