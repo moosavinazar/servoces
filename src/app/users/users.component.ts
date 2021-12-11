@@ -4,8 +4,7 @@ import {LoggingService} from "../logging.service";
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.css'],
-  providers: [LoggingService]
+  styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
 
