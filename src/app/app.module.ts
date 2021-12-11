@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import { AppRoutingModule } from './app-routing.module';
-import {LoggingService} from "./logging.service";
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import {LoggingService} from "./logging.service";
     AppRoutingModule
   ],
   providers: [
-    LoggingService,
     { provide: 'API_URL', useValue: 'mydomain.com/api/v2' }
   ],
   bootstrap: [AppComponent]
