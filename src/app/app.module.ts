@@ -6,13 +6,15 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserComponent,
-    UsersComponent
+    UsersComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
